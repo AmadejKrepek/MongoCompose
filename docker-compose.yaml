@@ -2,15 +2,15 @@ version: "3.8"
 
 services:
   mongo:
-        image: mongo
-        ports:
-          - 27017:27017
-        volumes:
-          - mongodb:/data/db
-          - mongodb_config:/data/configdb
-        networks: 
-          - myNetwork
-        container_name: mongo
+      image: mongo
+      ports:
+        - 27017:27017
+      volumes:
+        - mongodb:/data/db
+        - mongodb_config:/data/configdb
+      networks: 
+        - myNetwork
+      container_name: mongo
 
 networks:
   myNetwork:
@@ -18,3 +18,4 @@ networks:
 
 volumes:
   mongo:
+  mongodb:
