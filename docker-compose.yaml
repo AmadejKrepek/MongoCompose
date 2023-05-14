@@ -19,3 +19,4 @@ networks:
 volumes:
   mongo:
   mongodb:
+  mongodb_config:
