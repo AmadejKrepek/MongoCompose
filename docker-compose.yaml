@@ -8,13 +8,7 @@ services:
       volumes:
         - mongodb:/data/db
         - mongodb_config:/data/configdb
-      networks: 
-        - myNetwork
       container_name: mongo
-
-networks:
-  myNetwork:
-    driver: bridge
 
 volumes:
   mongo:
